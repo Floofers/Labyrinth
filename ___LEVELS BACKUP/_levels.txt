@@ -1,0 +1,32 @@
+LEVEL 1:
+        levelBuilder.removeSprites(3 * 50, 4 * 50, 10, 4);
+
+        levelBuilder.setPlayer(5 * 50, 6 * 50);
+        levelBuilder.addSprites(ESpriteType.GOAL.getName(), 11 * 50, 4 * 50, 2, 4);
+        levelBuilder.addSprites(ESpriteType.WALL.getName(), 3 * 50, 4 * 50, 1, 2);
+        levelBuilder.addSprite(ESpriteType.COIN.getName(), (9 * 50) + 25, (5 * 50) - 25);
+        levelBuilder.addSprite(ESpriteType.COIN.getName(), (7 * 50) - 25, (7 * 50) - 25);
+        levelBuilder.addSprite("green lock", 3 * 50, 7 * 50);
+        levelBuilder.addSprite("green lock wall", 3 * 50, 6 * 50);
+
+LEVEL 2:
+        levelBuilder.removeSprites(3 * 50, 5 * 50, 10, 2);
+        levelBuilder.removeSprites(6 * 50, 1 * 50, 3, 2);
+        levelBuilder.removeSprites(6 * 50, 3 * 50, 2, 8);
+
+        levelBuilder.setPlayer(3 * 50, (6 * 50) - 25);
+        levelBuilder.addSprites(ESpriteType.COIN.getName(), 7 * 50, (2 * 50) - 25, 2, 1);
+        levelBuilder.addSprites(ESpriteType.GOAL.getName(), 11 * 50, 5 * 50, 2, 2);
+
+        levelBuilder.addEnemy((7 * 50)-25, 3 * 50, new Position((7 * 50) - 25, 8 * 50));
+
+LEVEL 3:
+        levelBuilder.removeSprites(4 * 50, 2 * 50, 8, 2);
+        levelBuilder.removeSprites(4 * 50, 4 * 50, 3, 4);
+        levelBuilder.removeSprites(4 * 50, 8 * 50, 6, 2);
+
+        levelBuilder.setPlayer((6 * 50) - 25, (3 * 50) - 25);
+        levelBuilder.addSprites(ESpriteType.GOAL.getName(), 10 * 50, 2 * 50, 2, 2);
+        levelBuilder.addSprite("blue key", (9 * 50) - 25, (9 * 50) - 25);
+        levelBuilder.addSprite("blue lock", 8 * 50, 3 * 50);
+        levelBuilder.addSprite("blue lock wall", 8 * 50, 2 * 50);
